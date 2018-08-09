@@ -6,8 +6,8 @@
         <v-card class="pa-4">
             <h1>Acceso</h1>
             <v-form ref="form" v-model="valid" lazy-validation>
-                <v-text-field v-model="existingUser.name" :rules="nameRules" :counter="10" label="Usario o Correo Electronico" required></v-text-field>
-                <v-text-field v-model="existingUser.password" :rules="emailRules" label="Contraseña" required></v-text-field>
+                <v-text-field v-model="existingUser.name" :counter="10" label="Usario o Correo Electronico" required></v-text-field>
+                <v-text-field v-model="existingUser.password" label="Contraseña" required></v-text-field>
                 <v-checkbox v-model="checkbox" label="Recordar" required></v-checkbox>
                 <v-btn :disabled="!valid" @click="submit">
                     Acceder
@@ -20,14 +20,16 @@
 
 <script>
 export default {
-  existingUser: {
-    name: '',
-    password: ''
-  },
-  newUser: {
-    name: '',
-    password: ''
-  }
+  data: () => ({
+    existingUser: {
+      name: '',
+      password: ''
+    },
+    newUser: {
+      name: '',
+      password: ''
+    }
+  })
 }
 </script>
 

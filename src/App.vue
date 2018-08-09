@@ -20,7 +20,7 @@
             <v-toolbar-items>
                 <v-btn flat>Nosotros</v-btn>
                 <v-btn flat>Clientes</v-btn>
-                <v-btn flat>Sevicios</v-btn>
+                <v-btn flat>Servicios</v-btn>
                 <app-access/>
             </v-toolbar-items>
         </v-toolbar>
