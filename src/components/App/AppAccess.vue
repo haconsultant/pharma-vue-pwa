@@ -35,6 +35,7 @@ export default {
   methods: {
     login () {
       console.log('Hallo!')
+      this.$router.push('/main')
     },
     singup () {
       console.log('Hallo!')

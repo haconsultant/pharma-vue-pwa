@@ -31,9 +31,9 @@
 import SectionAbout from './Landing/Sections/SectionAbout'
 import SectionServices from './Landing/Sections/SectionServices'
 import SectionClients from './Landing/Sections/SectionClients'
-import SectionGoogleMap from './Landing/Sections/SectionGoogleMap'
+// import SectionGoogleMap from './Landing/Sections/SectionGoogleMap'
 export default {
-  components: { SectionAbout, SectionServices, SectionClients, SectionGoogleMap },
+  components: { SectionAbout, SectionServices, SectionClients },
   data: () => ({
     items: [
       {

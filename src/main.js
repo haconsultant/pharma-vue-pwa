@@ -4,6 +4,7 @@ import '@fortawesome/fontawesome-free/css/all.css'
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import store from './store'
 import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.min.css'
 import * as VueGoogleMaps from 'vue2-google-maps'
@@ -25,6 +26,7 @@ Vue.config.productionTip = false
 new Vue({
   el: '#app',
   router,
+  store,
   components: { App },
   template: '<App/>'
 })
