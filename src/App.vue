@@ -27,19 +27,14 @@
         <v-content>
             <router-view/>
         </v-content>
-        <v-footer dark height="auto">
-            <v-card class="flex" flat tile>
-                <v-card-actions class="grey darken-3 justify-center">
-                    &copy;2018 — <strong>NEWTOMS - LLC / Pharma</strong>
-                </v-card-actions>
-            </v-card>
-        </v-footer>
+        <app-footer/>
     </v-app>
 </template>
 <script>
 import AppAccess from './components/App/AppAccess'
+import AppFooter from './components/App/AppFooter'
 export default {
-  components: { AppAccess },
+  components: { AppAccess, AppFooter },
   data: () => ({
     icons: [
       'fab fa-facebook',

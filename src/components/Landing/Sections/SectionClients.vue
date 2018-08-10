@@ -4,12 +4,12 @@
             <v-flex xs12 lg8 xl8 column>
                 <v-card flat>
                     <h1 class="display-3 font-weight-thin">Nuestros Clientes</h1>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa dolorum et ducimus. Nihil culpa tempore labore maiores officia quisquam non, atque alias, repellendus sint fugit velit porro suscipit, a quasi.</p>
+                    <p xs12 lg6 xl6 class="hero__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa dolorum et ducimus. Nihil culpa tempore labore maiores officia quisquam non, atque alias, repellendus sint fugit velit porro suscipit, a quasi.</p>
                 </v-card>
             </v-flex>
         </v-layout>
         <v-layout row wrap align-center justify-center>
-            <v-flex v-for="client in clients" :key="`4${client}`" xs12 sm12 lg4 xl4>
+            <v-flex v-for="client in clients" :key="`4${client.id}`" xs12 sm12 lg4 xl4>
                 <v-card flat>
                     <v-card-media height="300px"><img :src="client.img" alt="" srcset=""></v-card-media>
                     <v-card-title primary-title>
@@ -26,15 +26,18 @@
 export default {
   data: () => ({
     clients: [{
+      id: 1,
       img: require('@/assets/citicen.svg'),
       title: 'Ciudadanos',
       text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia vero voluptatibus, repellat dignissimos eligendi placeat cupiditate expedita reiciendis molestiae sit suscipit velit maxime quasi est praesentium? Iste ipsum voluptatem provident.'
     },
     {
+      id: 2,
       img: require('@/assets/doctor.svg'),
       title: 'Medicos',
       text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia vero voluptatibus, repellat dignissimos eligendi placeat cupiditate expedita reiciendis molestiae sit suscipit velit maxime quasi est praesentium? Iste ipsum voluptatem provident.'
     }, {
+      id: 3,
       img: require('@/assets/pharmacy.svg'),
       title: 'Farmacias',
       text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia vero voluptatibus, repellat dignissimos eligendi placeat cupiditate expedita reiciendis molestiae sit suscipit velit maxime quasi est praesentium? Iste ipsum voluptatem provident.'

@@ -8,11 +8,11 @@
             <v-form ref="form" v-model="valid" lazy-validation>
                 <v-text-field v-model="existingUser.name" :counter="10" label="Usario o Correo Electronico" required></v-text-field>
                 <v-text-field v-model="existingUser.password" label="Contraseña" required></v-text-field>
-                <v-checkbox v-model="checkbox" label="Recordar" required></v-checkbox>
-                <v-btn :disabled="!valid" @click="submit">
+                <v-checkbox v-model="rememberMe" label="Recordar" required></v-checkbox>
+                <v-btn :disabled="!valid" @click="login">
                     Acceder
                 </v-btn>
-                <v-btn @click="clear">Registrate</v-btn>
+                <v-btn @click="singup">Registrate</v-btn>
             </v-form>
         </v-card>
     </v-menu>
@@ -21,6 +21,8 @@
 <script>
 export default {
   data: () => ({
+    rememberMe: false,
+    valid: true,
     existingUser: {
       name: '',
       password: ''
@@ -29,7 +31,15 @@ export default {
       name: '',
       password: ''
     }
-  })
+  }),
+  methods: {
+    login () {
+      console.log('Hallo!')
+    },
+    singup () {
+      console.log('Hallo!')
+    }
+  }
 }
 </script>
 

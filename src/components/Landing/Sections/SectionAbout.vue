@@ -4,7 +4,7 @@
             <v-flex xs12 lg8 xl8 column>
                 <v-card flat>
                     <h1 class="display-3 font-weight-thin">Nosotros</h1>
-                    <p xs12 lg6 xl6>{{ text }}</p>
+                    <p xs12 lg6 xl6 class="hero__text">{{ text }}</p>
                     <v-tabs centered icons-and-text class="landing__info__tab">
                         <v-tabs-slider color="primary"></v-tabs-slider>
                         <v-tab href="#tab-1">
@@ -24,7 +24,7 @@
                                 <v-flex xs12 sm6 lg6 xl6 column>
                                     {{ text }}
                                 </v-flex>
-                                                                <v-flex xs12 sm12 lg6 xl6 column>
+                                <v-flex xs12 sm12 lg6 xl6 column>
                                     <v-card flat>
                                         <v-card-media height="460px">
                                             <img :src="item.img" alt="mission">
