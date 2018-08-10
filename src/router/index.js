@@ -1,9 +1,9 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Landing from '@/components/Landing'
-import Main from '@/components/Dashboard/Main'
-import Doc1 from '@/components/Dashboard/View/Doc1'
-import Doc2 from '@/components/Dashboard/View/Doc2'
+import Main from '@/components/Views/Main'
+import Doc1 from '@/components/Views/Doc1'
+import Doc2 from '@/components/Views/Doc2'
 
 Vue.use(Router)
 

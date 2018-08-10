@@ -13,7 +13,7 @@
 </v-container>
 </template>
 <script>
-import SectionGoogleMap from './SectionGoogleMap'
+import SectionGoogleMap from './Utils/SectionGoogleMap'
 export default {
   components: { SectionGoogleMap }
 
