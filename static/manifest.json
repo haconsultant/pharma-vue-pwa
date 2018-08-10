@@ -1,6 +1,6 @@
 {
-  "name": "pharma-vue-pwa",
-  "short_name": "pharma-vue-pwa",
+  "name": "Pharma - Newtoms Project",
+  "short_name": "Pharma",
   "icons": [
     {
       "src": "/static/img/icons/android-chrome-192x192.png",

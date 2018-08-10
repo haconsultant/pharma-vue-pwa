@@ -1,4 +1,5 @@
 <template>
+                    <v-slide-y-transition mode="out-in">
     <div class="l">
                     <v-carousel hide-delimiters>
     <v-carousel-item
@@ -24,25 +25,18 @@
             <section-clients></section-clients>
         </v-flex>
         <v-flex xs12 lg12 xl12 column class="landing__section">
-            <v-container grid-list-xl>
-                <v-layout row wrap align-center justify-center>
-                    <v-flex xs12 lg8 xl8 column>
-                        <v-card flat>
-                            <h1 class="display-3 font-weight-thin">Servicios</h1>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa dolorum et ducimus. Nihil culpa tempore labore maiores officia quisquam non, atque alias, repellendus sint fugit velit porro suscipit, a quasi.</p>
-                        </v-card>
-                    </v-flex>
-                </v-layout>
-            </v-container>
+            <section-services></section-services>
         </v-flex>
     </div>
+                    </v-slide-y-transition>
 </template>
 <script>
 import SectionAbout from './Landing/Sections/SectionAbout'
+import SectionServices from './Landing/Sections/SectionServices'
 import SectionClients from './Landing/Sections/SectionClients'
 import SectionGoogleMap from './Landing/Sections/SectionGoogleMap'
 export default {
-  components: { SectionAbout, SectionClients, SectionGoogleMap },
+  components: { SectionAbout, SectionServices, SectionClients, SectionGoogleMap },
   data: () => ({
     items: [
       {
@@ -50,12 +44,6 @@ export default {
       },
       {
         src: 'https://images.pexels.com/photos/48604/pexels-photo-48604.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
-      },
-      {
-        src: 'https://cdn.vuetifyjs.com/images/carousel/bird.jpg'
-      },
-      {
-        src: 'https://cdn.vuetifyjs.com/images/carousel/planet.jpg'
       }
     ],
     text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
