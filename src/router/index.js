@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Landing from '@/components/Landing'
+import AppUserAccess from '@/components/App/AppUser/AppUserAccess'
 import Main from '@/components/Views/Main'
 import Doc1 from '@/components/Views/Doc1'
 import Doc2 from '@/components/Views/Doc2'
@@ -13,6 +14,11 @@ export default new Router({
       path: '/',
       name: 'Landing',
       component: Landing
+    },
+    {
+      path: '/user/access',
+      name: 'User',
+      component: AppUserAccess
     },
     {
       path: '/main',

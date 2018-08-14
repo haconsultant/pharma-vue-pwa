@@ -3,27 +3,31 @@ const state = {
     id: '',
     name: '',
     password: ''
-  }
+  },
+  logged: false
 }
 
 const mutations = {
-  SAVE_USER_DATA (state, data) {
+  LOGIN (state, data) {
     state.info = Object.assign({}, data)
   },
-  REMOVE_USER_DATA (state) {
-    state.info = {}
-    state.pharmacy = {}
+  IS_LOGGED (state, data) {
+    state.logged = Object.assign({}, data)
   }
 }
 
 const actions = {
-  saveUserData ({ commit }, data) {
+  userLogin ({ commit }, data) {
     console.log(data)
-    commit('SAVE_USER_DATA', data)
-  },
-  pharmacyInfo ({ commit }, data) {
     return new Promise((resolve, reject) => {
-      commit('SAVE_PHARMACY_INFO', data)
+      commit('SAVE_USER_DATA', data)
+      commit('IS_LOGGED', true)
+      resolve()
+    })
+  },
+  userLogout ({ commit }) {
+    return new Promise((resolve, reject) => {
+      commit('IS_LOGGED', false)
       resolve()
     })
   }

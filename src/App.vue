@@ -18,24 +18,29 @@
             <v-toolbar-title><img src="./assets/logotipo.svg" alt="logo" width="220px"></v-toolbar-title>
             <v-spacer></v-spacer>
             <v-toolbar-items>
+                <v-btn flat @click="goHome()">Inicio</v-btn>
                 <v-btn flat>Nosotros</v-btn>
                 <v-btn flat>Clientes</v-btn>
                 <v-btn flat>Servicios</v-btn>
-                <app-access/>
+                <v-btn flat @click="userAccess()">Acceso</v-btn>
             </v-toolbar-items>
         </v-toolbar>
         <v-content>
-            <router-view/>
+            <v-slide-y-transition mode="out-in">
+                <router-view/>
+            </v-slide-y-transition>
         </v-content>
-        <app-footer/>
+        <v-slide-y-transition mode="out-in">
+            <app-footer/>
+        </v-slide-y-transition>
     </v-app>
 </template>
 <script>
-import AppAccess from './components/App/AppAccess'
 import AppFooter from './components/App/AppFooter'
 export default {
-  components: { AppAccess, AppFooter },
+  components: { AppFooter },
   data: () => ({
+    modal: false,
     icons: [
       'fab fa-facebook',
       'fab fa-twitter',
@@ -50,6 +55,19 @@ export default {
       { title: 'Click Me 2' }
     ]
   }),
+  computed: {
+    Logged () {
+      return this.$store.state.user.logged
+    }
+  },
+  methods: {
+    goHome () {
+      this.$router.push('/')
+    },
+    userAccess () {
+      this.$router.push('/user/access')
+    }
+  },
   name: 'App'
 }
 </script>
