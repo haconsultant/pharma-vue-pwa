@@ -6657,6 +6657,10 @@ statuses@~1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/statuses/-/statuses-1.4.0.tgz#bb73d446da2796106efcc1b601a253d6c46bd087"
 
+sticky-js@^1.1.4:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/sticky-js/-/sticky-js-1.2.0.tgz#da54ece034cc906646fca8c36bc7b5f48eec55e2"
+
 stream-browserify@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/stream-browserify/-/stream-browserify-2.0.1.tgz#66266ee5f9bdb9940a4e4514cafb43bb71e5c9db"
@@ -7211,6 +7215,10 @@ uuid@^3.1.0:
   version "3.3.2"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.3.2.tgz#1b4af4955eb3077c501c23872fc6513811587131"
 
+v-sticky@^0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/v-sticky/-/v-sticky-0.0.3.tgz#16ced3350003d46acfaef4ab1a747dd894229b85"
+
 validate-npm-package-license@^3.0.1:
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/validate-npm-package-license/-/validate-npm-package-license-3.0.4.tgz#fc91f6b9c7ba15c857f4cb2c5defeec39d4f410a"
@@ -7269,6 +7277,16 @@ vue-loader@^13.3.0:
 vue-router@^3.0.1:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/vue-router/-/vue-router-3.0.1.tgz#d9b05ad9c7420ba0f626d6500d693e60092cc1e9"
+
+vue-sticky-directive@^0.0.6:
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/vue-sticky-directive/-/vue-sticky-directive-0.0.6.tgz#db2e9464223761de3f2236021db89d6333f4ca5b"
+
+vue-sticky-js@^0.0.4:
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/vue-sticky-js/-/vue-sticky-js-0.0.4.tgz#9e888402436f03c34fdca5316818fb9b714a02a0"
+  dependencies:
+    sticky-js "^1.1.4"
 
 vue-style-loader@^3.0.0:
   version "3.1.2"

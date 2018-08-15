@@ -6,8 +6,11 @@ import App from './App'
 import router from './router'
 import store from './store'
 import Vuetify from 'vuetify'
+import Sticky from 'vue-sticky-directive'
 import 'vuetify/dist/vuetify.min.css'
 import * as VueGoogleMaps from 'vue2-google-maps'
+
+Vue.use(Sticky)
 
 Vue.use(VueGoogleMaps, {
   load: {

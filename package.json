@@ -15,8 +15,11 @@
   },
   "dependencies": {
     "axios": "^0.18.0",
+    "v-sticky": "^0.0.3",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1",
+    "vue-sticky-directive": "^0.0.6",
+    "vue-sticky-js": "^0.0.4",
     "vue2-google-maps": "^0.10.2",
     "vuetify": "^1.0.0",
     "vuex": "^3.0.1"
