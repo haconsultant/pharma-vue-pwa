@@ -4,7 +4,7 @@
             <v-flex xs12 sm12 lg10 xl10 column>
                 <v-layout>
                     <v-flex class="hidden-xs-only" sm6 lg6 xl6>
-                        <img src="" alt="" srcset="">
+                        <img src="http://via.placeholder.com/700x450" alt="img">
                     </v-flex>
                     <v-flex xs12 lg6 xl6>
                         <v-stepper v-model="step" vertical>
